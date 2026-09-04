@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>برغر تاون | ألذ برغر في مصر</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== ANNOUNCEMENT BAR ===== -->
+  <div class="announcement-bar">
+    <div class="announcement-track">
+      <span>🔥 خصم 20٪ على جميع الوجبات الكبيرة!</span>
+      <span>🍔 اطلب وجبتين واحصل على بطاطس مجانية!</span>
+      <span>🥤 مشروب مجاني مع كل وجبة عائلية!</span>
+      <span>⚡ توصيل سريع خلال 30 دقيقة أو أقل!</span>
+      <span>🎉 عرض خاص للطلاب - خصم 15٪ بالبطاقة الجامعية!</span>
+      <span>🔥 خصم 20٪ على جميع الوجبات الكبيرة!</span>
+      <span>🍔 اطلب وجبتين واحصل على بطاطس مجانية!</span>
+      <span>🥤 مشروب مجاني مع كل وجبة عائلية!</span>
+      <span>⚡ توصيل سريع خلال 30 دقيقة أو أقل!</span>
+      <span>🎉 عرض خاص للطلاب - خصم 15٪ بالبطاقة الجامعية!</span>
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <div class="logo-icon">🍔</div>
+        <div class="logo-text">
+          <span class="logo-name">برغر تاون</span>
+          <span class="logo-tagline">Burger Town</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">الرئيسية</a></li>
+        <li><a href="#menu" class="nav-link">قائمتنا</a></li>
+        <li><a href="#popular" class="nav-link">الأكثر طلباً</a></li>
+        <li><a href="#offers" class="nav-link">العروض</a></li>
+        <li><a href="#testimonials" class="nav-link">آراء العملاء</a></li>
+        <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="cart-btn" id="cartBtn" aria-label="سلة التسوق">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+          </svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <a href="#menu" class="order-btn">اطلب الآن</a>
+        <button class="hamburger" id="hamburger" aria-label="القائمة">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="hero-container">
+      <div class="hero-content" data-reveal>
+        <div class="hero-badge">🔥 الأفضل في مصر</div>
+        <h1 class="hero-title">
+          ألذ برغر...<br />
+          <span class="hero-accent">بطعم لا يُنسى!</span>
+        </h1>
+        <p class="hero-desc">
+          نقدم لك تجربة برغر فريدة من نوعها، مصنوعة من أجود أنواع اللحوم الطازجة،
+          مع صوصات سرية لا مثيل لها — لأنك تستحق الأفضل دائماً.
+        </p>
+        <div class="hero-features">
+          <div class="hero-feature"><span>🥩</span> لحوم طازجة 100٪</div>
+          <div class="hero-feature"><span>🚀</span> توصيل خلال 30 دقيقة</div>
+          <div class="hero-feature"><span>⭐</span> تقييم 4.9/5</div>
+        </div>
+        <div class="hero-btns">
+          <a href="#menu" class="btn-primary">تصفح القائمة</a>
+          <a href="tel:+201001234567" class="btn-secondary">اطلب الآن</a>
+        </div>
+      </div>
+
+      <div class="hero-slider" data-reveal-right>
+        <div class="slider-wrapper" id="heroSlider">
+          <div class="slide active">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=700&q=85&auto=format&fit=crop" alt="برغر كلاسيك" />
+            <div class="slide-label">الكلاسيك برغر</div>
+          </div>
+          <div class="slide">
+            <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=700&q=85&auto=format&fit=crop" alt="دبل برغر" />
+            <div class="slide-label">دبل شيز برغر</div>
+          </div>
+          <div class="slide">
+            <img src="https://images.unsplash.com/photo-1596956470007-2bf6095e7e16?w=700&q=85&auto=format&fit=crop" alt="برغر مميز" />
+            <div class="slide-label">سبيسيال برغر</div>
+          </div>
+          <div class="slide">
+            <img src="https://images.unsplash.com/photo-1551782450-17144efb9c50?w=700&q=85&auto=format&fit=crop" alt="كريسبي برغر" />
+            <div class="slide-label">كريسبي برغر</div>
+          </div>
+        </div>
+        <div class="slider-dots" id="heroDots">
+          <button class="dot active" data-index="0"></button>
+          <button class="dot" data-index="1"></button>
+          <button class="dot" data-index="2"></button>
+          <button class="dot" data-index="3"></button>
+        </div>
+        <button class="slider-nav prev" id="heroPrev" aria-label="السابق">&#8250;</button>
+        <button class="slider-nav next" id="heroNext" aria-label="التالي">&#8249;</button>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>اكتشف المزيد</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ===== STATS SECTION ===== -->
+  <section class="stats-section" id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card" data-reveal>
+          <div class="stat-icon">😊</div>
+          <div class="stat-number" data-target="50000">0</div>
+          <div class="stat-suffix">+</div>
+          <div class="stat-label">عميل سعيد</div>
+        </div>
+        <div class="stat-card" data-reveal>
+          <div class="stat-icon">🍔</div>
+          <div class="stat-number" data-target="100000">0</div>
+          <div class="stat-suffix">+</div>
+          <div class="stat-label">وجبة تم تقديمها</div>
+        </div>
+        <div class="stat-card" data-reveal>
+          <div class="stat-icon">📍</div>
+          <div class="stat-number" data-target="15">0</div>
+          <div class="stat-suffix">+</div>
+          <div class="stat-label">فرعاً في مصر</div>
+        </div>
+        <div class="stat-card" data-reveal>
+          <div class="stat-icon">🏆</div>
+          <div class="stat-number" data-target="10">0</div>
+          <div class="stat-suffix">+</div>
+          <div class="stat-label">سنوات من الخبرة</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== POPULAR SECTION ===== -->
+  <section class="popular-section" id="popular">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <div class="section-badge">⭐ الأكثر مبيعاً</div>
+        <h2 class="section-title">الأكثر طلباً</h2>
+        <p class="section-desc">أشهر وجباتنا التي يعشقها عملاؤنا ويطلبونها كل يوم</p>
+      </div>
+      <div class="popular-grid" id="popularGrid">
+        <!-- filled by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MENU SECTION ===== -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <div class="section-badge">🍽️ قائمة الطعام</div>
+        <h2 class="section-title">قائمتنا الكاملة</h2>
+        <p class="section-desc">اكتشف كل ما نقدمه من وجبات لذيذة تُرضي جميع الأذواق</p>
+      </div>
+      <div class="menu-tabs" id="menuTabs">
+        <button class="menu-tab active" data-cat="beef">🥩 برغر اللحم</button>
+        <button class="menu-tab" data-cat="chicken">🍗 برغر الدجاج</button>
+        <button class="menu-tab" data-cat="family">👨‍👩‍👧 الوجبات العائلية</button>
+        <button class="menu-tab" data-cat="starters">🧅 المقبلات</button>
+        <button class="menu-tab" data-cat="sides">🍟 البطاطس</button>
+        <button class="menu-tab" data-cat="drinks">🥤 المشروبات</button>
+        <button class="menu-tab" data-cat="milkshake">🥛 ميلك شيك</button>
+        <button class="menu-tab" data-cat="desserts">🍰 الحلويات</button>
+      </div>
+      <div class="menu-grid" id="menuGrid">
+        <!-- filled by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OFFERS SECTION ===== -->
+  <section class="offers-section" id="offers">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <div class="section-badge">🎁 عروض حصرية</div>
+        <h2 class="section-title">العروض الخاصة</h2>
+        <p class="section-desc">وفّر أكثر مع عروضنا المميزة المصممة لكل الأذواق</p>
+      </div>
+      <div class="offers-grid">
+        <div class="offer-card offer-family" data-reveal>
+          <div class="offer-badge">الأكثر طلباً</div>
+          <div class="offer-emoji">👨‍👩‍👧‍👦</div>
+          <h3>عرض العائلة</h3>
+          <p>4 برغر + 4 بطاطس كبيرة + 4 مشروبات + 2 ميلك شيك</p>
+          <div class="offer-price">
+            <span class="old-price">280 جنيه</span>
+            <span class="new-price">199 جنيه</span>
+          </div>
+          <div class="offer-save">وفر 81 جنيه!</div>
+          <button class="offer-btn" onclick="addToCartCustom('عرض العائلة', 199)">اطلب الآن</button>
+        </div>
+        <div class="offer-card offer-weekend" data-reveal>
+          <div class="offer-badge">عرض محدود</div>
+          <div class="offer-emoji">🎉</div>
+          <h3>عرض نهاية الأسبوع</h3>
+          <p>2 برغر دبل + بطاطس كبيرة + مشروبين + صوص مجاني</p>
+          <div class="offer-price">
+            <span class="old-price">160 جنيه</span>
+            <span class="new-price">109 جنيه</span>
+          </div>
+          <div class="offer-save">وفر 51 جنيه!</div>
+          <button class="offer-btn" onclick="addToCartCustom('عرض نهاية الأسبوع', 109)">اطلب الآن</button>
+        </div>
+        <div class="offer-card offer-friends" data-reveal>
+          <div class="offer-badge">للأصدقاء</div>
+          <div class="offer-emoji">🤝</div>
+          <h3>عرض الأصدقاء</h3>
+          <p>3 برغر مشكل + 3 بطاطس + 3 مشروبات + ناجتس مجاني</p>
+          <div class="offer-price">
+            <span class="old-price">220 جنيه</span>
+            <span class="new-price">159 جنيه</span>
+          </div>
+          <div class="offer-save">وفر 61 جنيه!</div>
+          <button class="offer-btn" onclick="addToCartCustom('عرض الأصدقاء', 159)">اطلب الآن</button>
+        </div>
+        <div class="offer-card offer-student" data-reveal>
+          <div class="offer-badge">للطلاب</div>
+          <div class="offer-emoji">🎓</div>
+          <h3>عرض الطلاب</h3>
+          <p>برغر + بطاطس وسط + مشروب + آيس كريم مجاني</p>
+          <div class="offer-price">
+            <span class="old-price">95 جنيه</span>
+            <span class="new-price">65 جنيه</span>
+          </div>
+          <div class="offer-save">وفر 30 جنيه!</div>
+          <button class="offer-btn" onclick="addToCartCustom('عرض الطلاب', 65)">اطلب الآن</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY SECTION ===== -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <div class="section-badge">📸 معرضنا</div>
+        <h2 class="section-title">معرض الصور</h2>
+        <p class="section-desc">لمحة من عالم برغر تاون — صور حقيقية من مطابخنا وفروعنا</p>
+      </div>
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item" data-reveal>
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=80&auto=format&fit=crop" alt="برغر كلاسيك" loading="lazy" />
+          <div class="gallery-overlay"><span>+</span></div>
+        </div>
+        <div class="gallery-item" data-reveal>
+          <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=600&q=80&auto=format&fit=crop" alt="دبل برغر" loading="lazy" />
+          <div class="gallery-overlay"><span>+</span></div>
+        </div>
+        <div class="gallery-item" data-reveal>
+          <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=600&q=80&auto=format&fit=crop" alt="وجبة كاملة" loading="lazy" />
+          <div class="gallery-overlay"><span>+</span></div>
+        </div>
+        <div class="gallery-item" data-reveal>
+          <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=600&q=80&auto=format&fit=crop" alt="داخل المطعم" loading="lazy" />
+          <div class="gallery-overlay"><span>+</span></div>
+        </div>
+        <div class="gallery-item" data-reveal>
+          <img src="https://images.unsplash.com/photo-1482049289013-72b58040f5e0?w=600&q=80&auto=format&fit=crop" alt="بطاطس مقلية" loading="lazy" />
+          <div class="gallery-overlay"><span>+</span></div>
+        </div>
+        <div class="gallery-item" data-reveal>
+          <img src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?w=600&q=80&auto=format&fit=crop" alt="ميلك شيك" loading="lazy" />
+          <div class="gallery-overlay"><span>+</span></div>
+        </div>
+        <div class="gallery-item" data-reveal>
+          <img src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=600&q=80&auto=format&fit=crop" alt="دجاج مقلي" loading="lazy" />
+          <div class="gallery-overlay"><span>+</span></div>
+        </div>
+        <div class="gallery-item" data-reveal>
+          <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=600&q=80&auto=format&fit=crop" alt="برغر فاخر" loading="lazy" />
+          <div class="gallery-overlay"><span>+</span></div>
+        </div>
+        <div class="gallery-item" data-reveal>
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80&auto=format&fit=crop" alt="وجبات متنوعة" loading="lazy" />
+          <div class="gallery-overlay"><span>+</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LIGHTBOX ===== -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="إغلاق">&times;</button>
+    <button class="lightbox-nav lb-prev" id="lbPrev" aria-label="السابق">&#8250;</button>
+    <button class="lightbox-nav lb-next" id="lbNext" aria-label="التالي">&#8249;</button>
+    <div class="lightbox-img-wrap">
+      <img src="" alt="" id="lightboxImg" />
+    </div>
+    <div class="lightbox-counter" id="lightboxCounter"></div>
+  </div>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <div class="section-badge">💬 آراء العملاء</div>
+        <h2 class="section-title">ماذا يقول عملاؤنا؟</h2>
+        <p class="section-desc">أكثر من 50,000 عميل سعيد وثقوا بنا — إليك ما يقولونه</p>
+      </div>
+      <div class="testimonials-wrapper">
+        <div class="testimonials-track" id="testiTrack">
+          <div class="testi-card">
+            <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+            <p class="testi-text">"والله برغر تاون ده مش برغر عادي! الطعم بيفرق جداً عن أي مطعم تاني. اللحمة طازجة والصوص له طعم خاص مش موجود في أي مكان تاني. بقالي سنتين بطلب منهم كل أسبوع!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar">أ</div>
+              <div class="testi-info">
+                <strong>أحمد محمد</strong>
+                <span>القاهرة</span>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+            <p class="testi-text">"أفضل تجربة برغر في مصر بلا منازع! سواء التوصيل أو الجلوس في الفرع، الخدمة ممتازة جداً والأكل بيوصل ساخن وطازج. كل مرة أطلب منهم مبسوطة جداً."</p>
+            <div class="testi-author">
+              <div class="testi-avatar">س</div>
+              <div class="testi-info">
+                <strong>سارة علي</strong>
+                <span>الجيزة</span>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+            <p class="testi-text">"الدبل تشيز برغر ده حاجة تانية خالص! الجبنة بتودع فوق اللحمة والصوص السري ده بيجنن. جربت كتير من المطاعم المشهورة بس برغر تاون الأول دايماً."</p>
+            <div class="testi-author">
+              <div class="testi-avatar">م</div>
+              <div class="testi-info">
+                <strong>محمود حسن</strong>
+                <span>الإسكندرية</span>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+            <p class="testi-text">"عرض العائلة ده كسبنا! 4 أفراد اتغدينا بسعر معقول جداً والأكل كان تحفة. الأطفال عشقوا الميلك شيك والبطاطس. هنرجع تاني بكل تأكيد!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar">ن</div>
+              <div class="testi-info">
+                <strong>نورهان إبراهيم</strong>
+                <span>المنصورة</span>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+            <p class="testi-text">"التوصيل كان أسرع من المتوقع والأكل وصل ساخن تماماً. الكريسبي تشيكن برغر من الأفضل اللي جربته. السعر مناسب جداً للجودة دي. شكراً برغر تاون!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar">ع</div>
+              <div class="testi-info">
+                <strong>عمر خالد</strong>
+                <span>طنطا</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-controls">
+          <button class="testi-btn" id="testiPrev" aria-label="السابق">&#8250;</button>
+          <div class="testi-dots" id="testiDots"></div>
+          <button class="testi-btn" id="testiNext" aria-label="التالي">&#8249;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <div class="section-badge">📞 تواصل معنا</div>
+        <h2 class="section-title">نحن هنا لخدمتك</h2>
+        <p class="section-desc">تواصل معنا في أي وقت — فريقنا جاهز دائماً</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info" data-reveal>
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div class="contact-detail">
+              <h4>اتصل بنا</h4>
+              <a href="tel:+201001234567">01001234567</a>
+              <a href="tel:+201111234567">01111234567</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div class="contact-detail">
+              <h4>البريد الإلكتروني</h4>
+              <a href="mailto:hello@burgertown.eg">hello@burgertown.eg</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div class="contact-detail">
+              <h4>الفرع الرئيسي</h4>
+              <p>15 شارع التحرير، وسط البلد، القاهرة</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🕐</div>
+            <div class="contact-detail">
+              <h4>ساعات العمل</h4>
+              <p>السبت – الخميس: 10 ص – 2 ص</p>
+              <p>الجمعة: 12 م – 3 ص</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" data-reveal>
+          <h3>أرسل لنا رسالة</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">الاسم <span class="req">*</span></label>
+              <input type="text" id="name" name="name" placeholder="اكتب اسمك هنا" />
+              <span class="error-msg" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="phone">رقم الهاتف <span class="req">*</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="01xxxxxxxxx" />
+              <span class="error-msg" id="phoneError"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">البريد الإلكتروني</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" />
+            <span class="error-msg" id="emailError"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">رسالتك <span class="req">*</span></label>
+            <textarea id="message" name="message" placeholder="اكتب رسالتك هنا..." rows="5"></textarea>
+            <span class="error-msg" id="messageError"></span>
+          </div>
+          <button type="submit" class="submit-btn">
+            <span>إرسال الرسالة</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+            </svg>
+          </button>
+          <div class="form-success" id="formSuccess">
+            ✅ شكراً لتواصلك معنا! سنرد عليك في أقرب وقت.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="logo">
+              <div class="logo-icon">🍔</div>
+              <div class="logo-text">
+                <span class="logo-name">برغر تاون</span>
+                <span class="logo-tagline">Burger Town</span>
+              </div>
+            </div>
+            <p class="footer-desc">نقدم أجود أنواع البرغر المصنوع من لحوم طازجة 100٪ مع صوصات سرية فريدة لتجربة لا تُنسى منذ 2014.</p>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="فيسبوك">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="إنستغرام">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="تيك توك">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.91a8.27 8.27 0 0 0 4.84 1.55V7.02a4.85 4.85 0 0 1-1.08-.33z"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="يوتيوب">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon fill="white" points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>روابط سريعة</h4>
+            <ul>
+              <li><a href="#home">الرئيسية</a></li>
+              <li><a href="#menu">قائمة الطعام</a></li>
+              <li><a href="#popular">الأكثر طلباً</a></li>
+              <li><a href="#offers">العروض الخاصة</a></li>
+              <li><a href="#gallery">معرض الصور</a></li>
+              <li><a href="#contact">تواصل معنا</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>فئات القائمة</h4>
+            <ul>
+              <li><a href="#menu">برغر اللحم</a></li>
+              <li><a href="#menu">برغر الدجاج</a></li>
+              <li><a href="#menu">الوجبات العائلية</a></li>
+              <li><a href="#menu">المقبلات</a></li>
+              <li><a href="#menu">الميلك شيك</a></li>
+              <li><a href="#menu">الحلويات</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>ساعات العمل</h4>
+            <div class="footer-hours">
+              <div class="hours-row">
+                <span>السبت – الخميس</span>
+                <span>10 ص – 2 ص</span>
+              </div>
+              <div class="hours-row">
+                <span>الجمعة</span>
+                <span>12 م – 3 ص</span>
+              </div>
+            </div>
+            <h4 style="margin-top:1.5rem">تواصل معنا</h4>
+            <p style="font-size:0.9rem;opacity:0.8;line-height:1.8">
+              📞 01001234567<br/>
+              ✉️ hello@burgertown.eg<br/>
+              📍 15 شارع التحرير، القاهرة
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© جميع الحقوق محفوظة لمطعم برغر تاون 2026</p>
+        <p class="footer-made">صُنع بـ ❤️ في مصر</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== CART SIDEBAR ===== -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>🛒 سلة التسوق</h3>
+      <button class="cart-close" id="cartClose" aria-label="إغلاق">×</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty">
+        <div class="cart-empty-icon">🛒</div>
+        <p>سلتك فارغة</p>
+        <a href="#menu" class="browse-menu-btn" id="browseMenuBtn">تصفح القائمة</a>
+      </div>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none">
+      <div class="cart-total">
+        <span>الإجمالي:</span>
+        <span id="cartTotal">0 جنيه</span>
+      </div>
+      <button class="checkout-btn">إتمام الطلب</button>
+    </div>
+  </div>
+
+  <!-- ===== SCROLL TO TOP ===== -->
+  <button class="scroll-top" id="scrollTop" aria-label="للأعلى">↑</button>
+
+  <!-- ===== TOAST ===== -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
