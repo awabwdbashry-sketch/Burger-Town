@@ -103,7 +103,7 @@ index.html
 
 ## 👨‍💻 المطور
 
-**Awab Wd Bashry**
+**Awab Bashary | AwabBuilds**
 
 💻 Front-End Developer
 
@@ -214,6 +214,6 @@ in your browser.
 
 ## 👨‍💻 Developer
 
-**Awab Wd Bashry**
+**Awab Bashary | AwabBuilds**
 
 💻 Front-End Developer
